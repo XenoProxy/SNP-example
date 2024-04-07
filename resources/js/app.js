@@ -3,12 +3,24 @@ import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 import App from './components/App.vue';
+import Banner from './components/Banner.vue';
+import About from './components/About.vue';
+import Products from './components/Products.vue';
+import Contacts from './components/Contacts.vue';
 
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-      { path: '/', component: App },
+      { path: '/',
+        components: {
+          // default: Home,
+          Banner,
+          About,
+          Products,
+          Contacts
+        }, 
+      },
   ]
 });
 
