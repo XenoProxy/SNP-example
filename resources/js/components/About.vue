@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about" style="height: 400px;">
     About Us
   </div>
 </template>
