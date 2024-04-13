@@ -1,28 +1,28 @@
 <template>
   <header>
-    <nav class="px-3 py-2 bg-dark text-white" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
+    <nav class="px-3 py-2 bg-dark" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
       <div class="d-flex flex-row align-items-center justify-content-between">  
-        <div class="logo">Logo</div>        
+        <div class="logo" style="color: azure;">Logo</div>        
         <ul class="nav col-12 col-lg-auto my-2 align-items-center justify-content-end my-md-0 text-small" 
             style="align-self: flex-end;">
           <li>
-            <router-link to="/" class="nav-link text-white" @click="scrollToBanner"
-              style="text-decoration: none; color: white;">Home
+            <router-link to="/" class="nav-link" @click="scrollToBanner"
+              style="text-decoration: none;">Home
             </router-link>
           </li>              
           <li>
-              <router-link to="/" class="nav-link text-white" @click="scrollToAbout"
-                style="text-decoration: none; color: white;"> About
+              <router-link to="/" class="nav-link" @click="scrollToAbout"
+                style="text-decoration: none;"> About
               </router-link>
           </li>
           <li>
-              <router-link to="/" class="nav-link text-white" @click="scrollToProducts"
-                style="text-decoration: none; color: white;"> Products
+              <router-link to="/" class="nav-link" @click="scrollToProducts"
+                style="text-decoration: none;"> Products
               </router-link>
           </li>
           <li>
-              <router-link to="/" class="nav-link text-white" @click="scrollToContacts"
-                style="text-decoration: none; color: white;"> Contact Us
+              <router-link to="/" class="nav-link" @click="scrollToContacts"
+                style="text-decoration: none;"> Contact Us
               </router-link>
           </li>
         </ul>
