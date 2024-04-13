@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="px-3 py-2 bg-dark text-white">
+    <nav class="px-3 py-2 bg-dark text-white" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
       <div class="d-flex flex-row align-items-center justify-content-between">  
         <div class="logo">Logo</div>        
         <ul class="nav col-12 col-lg-auto my-2 align-items-center justify-content-end my-md-0 text-small" 
@@ -27,10 +27,10 @@
           </li>
         </ul>
       </div> 
-    </div>
+    </nav>
   </header>
   
-  <div class="card">
+  <div class="card" style="margin-top: 58px; position: inherit;">
     <div class="card-body">
       <div class="container-fluid">
         <div ref="banner">
