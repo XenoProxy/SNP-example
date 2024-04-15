@@ -4,20 +4,20 @@
       <div class="d-flex flex-row align-items-center justify-content-between">  
         <div class="logo" style="color: azure;">Logo</div>        
         <ul class="nav col-12 col-lg-auto my-2 align-items-center justify-content-end my-md-0 text-small" 
-            style="align-self: flex-end;">
-          <li>
-            <router-link to="/" class="nav-link" @click="scrollToBanner"
-              style="text-decoration: none;">Home
-            </router-link>
-          </li>              
+            style="align-self: flex-end;">         
           <li>
               <router-link to="/" class="nav-link" @click="scrollToAbout"
                 style="text-decoration: none;"> About
               </router-link>
           </li>
           <li>
-              <router-link to="/" class="nav-link" @click="scrollToProducts"
-                style="text-decoration: none;"> Products
+            <router-link to="/" class="nav-link" @click="scrollToSupply"
+              style="text-decoration: none;">Supply 
+            </router-link>
+          </li>     
+          <li>
+              <router-link to="/" class="nav-link" @click="scrollToCatalog"
+                style="text-decoration: none;"> Catalog
               </router-link>
           </li>
           <li>
@@ -33,14 +33,14 @@
   <div class="card" style="margin-top: 58px; position: inherit;">
     <div class="card-body">
       <div class="container-fluid">
-        <div ref="banner">
-          <router-view ref="view-banner" name="Banner"></router-view>
-        </div>  
         <div ref="about">      
         <router-view ref="view-about" name="About"></router-view>
         </div>
-        <div ref="products">
-          <router-view ref="view-products" name="Products"></router-view>
+        <div ref="supply">
+          <router-view ref="view-supply" name="Supply"></router-view>
+        </div>  
+        <div ref="catalog">
+          <router-view ref="view-catalog" name="Catalog"></router-view>
         </div>
         <div ref="contacts">
           <router-view ref="view-contacts" name="Contacts"></router-view>
@@ -63,14 +63,14 @@
       // this.scrollToAnchorPoint();
     }, 
     methods: {
-      scrollToBanner() {
-        this.$refs.banner.scrollIntoView({ behavior: 'smooth' });
-      },
       scrollToAbout() {
         this.$refs.about.scrollIntoView({ behavior: 'smooth' });
       },
-      scrollToProducts() {
-        this.$refs.products.scrollIntoView({ behavior: 'smooth' });
+      scrollToSupply() {
+        this.$refs.supply.scrollIntoView({ behavior: 'smooth' });
+      },
+      scrollToCatalog() {
+        this.$refs.catalog.scrollIntoView({ behavior: 'smooth' });
       },
       scrollToContacts() {
         this.$refs.contacts.scrollIntoView({ behavior: 'smooth' });
