@@ -3,7 +3,6 @@ import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 import App from './components/App.vue';
-import Banner from './components/Banner.vue';
 import About from './components/About.vue';
 import Supply from './components/Supply.vue';
 import Catalog from './components/Catalog.vue';
@@ -15,7 +14,6 @@ const router = createRouter({
   routes: [
       { path: '/',
         components: {
-          Banner,
           About,
           Supply,
           Catalog,
