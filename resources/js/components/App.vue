@@ -2,8 +2,8 @@
   <header>
     <nav class="px-3 py-2 bg-dark" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
       <div class="d-flex flex-row align-items-center justify-content-between">  
-        <div class="logo" style="color: azure;">Logo</div>        
-        <ul class="nav col-12 col-lg-auto my-2 align-items-center justify-content-end my-md-0 text-small" 
+        <div class="logo" style="color: azure;">SNP</div>        
+        <ul class="nav col-12 col-lg-auto align-items-center justify-content-end text-small" 
             style="align-self: flex-end;">         
           <li>
               <router-link to="/" class="nav-link" @click="scrollToAbout"
@@ -32,19 +32,17 @@
   
   <div class="card" style="margin-top: 58px; position: inherit;">
     <div class="card-body">
-      <div class="container-fluid">
-        <div ref="about">      
-        <router-view ref="view-about" name="About"></router-view>
-        </div>
-        <div ref="supply">
-          <router-view ref="view-supply" name="Supply"></router-view>
-        </div>  
-        <div ref="catalog">
-          <router-view ref="view-catalog" name="Catalog"></router-view>
-        </div>
-        <div ref="contacts">
-          <router-view ref="view-contacts" name="Contacts"></router-view>
-        </div>
+      <div ref="about">      
+      <router-view ref="view-about" name="About"></router-view>
+      </div>
+      <div ref="supply">
+        <router-view ref="view-supply" name="Supply"></router-view>
+      </div>  
+      <div ref="catalog">
+        <router-view ref="view-catalog" name="Catalog"></router-view>
+      </div>
+      <div ref="contacts">
+        <router-view ref="view-contacts" name="Contacts"></router-view>
       </div>
     </div>
   </div>
