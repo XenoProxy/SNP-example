@@ -82,8 +82,10 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
-
-    'locale' => 'en',
+    
+    'locale' => env('APP_LOCALE', 'en'),
+    'locales' => ['en', 'ko'],
+    'locale_system' => ['ko' => 'ko_KR.UTF-8', 'en' => 'en_US.UTF-8'],
 
     /*
     |--------------------------------------------------------------------------
@@ -97,6 +99,7 @@ return [
     */
 
     'fallback_locale' => 'en',
+
 
     /*
     |--------------------------------------------------------------------------

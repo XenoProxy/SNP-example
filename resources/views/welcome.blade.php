@@ -11,6 +11,5 @@
 </head>
 <body>
     <div id="app"></div>
-    <footer>footer</footer>
 </body>
 </html>

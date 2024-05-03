@@ -1,10 +1,13 @@
 <template>
   <header>
-    <nav class="px-3 py-2 bg-dark" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
-      <div class="d-flex flex-row align-items-center justify-content-between">  
-        <div class="logo" style="color: azure;">SNP</div>        
-        <ul class="nav col-12 col-lg-auto align-items-center justify-content-end text-small" 
-            style="align-self: flex-end;">         
+    <nav class="px-3 pt-2 bg-dark" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
+      <div class="header d-flex flex-row align-items-center justify-content-between">  
+        <div class="logo" style="color: azure;">SNP</div>    
+        <ul class="nav col-12 col-lg-auto align-items-center justify-content-end text-small" style="align-self: flex-end;">   
+          <li class="lang">
+            <a class="lang-button">EN</a>
+            <a class="lang-button">KO</a>
+          </li>      
           <li>
               <router-link to="/" class="nav-link" @click="scrollToAbout"
                 style="text-decoration: none;"> About
@@ -47,6 +50,9 @@
     </div>
   </div>
   
+  <footer>
+    <div class="footer"></div>
+  </footer>
 </template>
   
 <script>
@@ -62,16 +68,16 @@
     }, 
     methods: {
       scrollToAbout() {
-        this.$refs.about.scrollIntoView({ behavior: 'smooth' });
+        this.$refs.about.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest" });
       },
       scrollToSupply() {
-        this.$refs.supply.scrollIntoView({ behavior: 'smooth' });
+        this.$refs.supply.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
       },
       scrollToCatalog() {
-        this.$refs.catalog.scrollIntoView({ behavior: 'smooth' });
+        this.$refs.catalog.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest" });
       },
       scrollToContacts() {
-        this.$refs.contacts.scrollIntoView({ behavior: 'smooth' });
+        this.$refs.contacts.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest" });
       },
     },
            

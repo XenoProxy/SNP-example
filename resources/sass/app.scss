@@ -7,13 +7,27 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
+.header{
+  box-sizing: none !important;
+}
 .logo{
   font-size: 24px;
   color: rgb(87, 157, 255) !important;
-  margin-bottom: 20px;
 }
 .nav{
-  margin-bottom: 20px;
+}
+.lang{
+  box-sizing:inherit !important;
+  margin-right: 20px;
+}
+.lang-button{
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(87, 157, 255) !important;
+  text-decoration: none;
+}
+.lang-button:hover{
+  color: rgb(255, 255, 255) !important;
 }
 .nav-link{
   font-size: 20px;
@@ -24,6 +38,8 @@
 }
 .card{
   margin-top: 0px;
+  border: none !important;
+  border-radius: 0 !important;
 }
 .card-body{
   padding: 0px;
@@ -47,6 +63,7 @@
   max-width: 800px;
 }
 .supply{
+  margin-top: 40px;
   height: auto;
 }
 .catalog{
@@ -108,4 +125,8 @@ li.catalog-item{
 }
 .contact-content{
   font-size: 16px;
+}
+.footer{
+  height: 60px;
+  background-color: #494949;
 }
