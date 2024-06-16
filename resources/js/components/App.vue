@@ -1,13 +1,9 @@
 <template>
   <header>
-    <nav class="px-3 pt-2 bg-dark" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
-      <div class="header d-flex flex-row align-items-center justify-content-between">  
+    <nav class="pt-2 bg-dark" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
+      <div class="header d-flex flex-column align-items-center">  
         <div class="logo" style="color: azure;">SNP</div>    
-        <ul class="nav col-12 col-lg-auto align-items-center justify-content-end text-small" style="align-self: flex-end;">   
-          <li class="lang">
-            <a class="lang-button">EN</a>
-            <a class="lang-button">KO</a>
-          </li>      
+        <ul class="nav align-items-center justify-content-start" style="align-self: flex-end;">       
           <li>
               <router-link to="/" class="nav-link" @click="scrollToAbout"
                 style="text-decoration: none;"> About
@@ -29,11 +25,15 @@
               </router-link>
           </li>
         </ul>
+        <div class="lang d-flex flex-row">
+          <a class="lang-button">EN</a>
+          <a class="lang-button">KO</a>
+        </div>
       </div> 
     </nav>
   </header>
   
-  <div class="card" style="margin-top: 58px; position: inherit;">
+  <div class="card" style="position: inherit;">
     <div class="card-body">
       <div ref="about">      
       <router-view ref="view-about" name="About"></router-view>

@@ -7,22 +7,38 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
+html, body, #app{
+  border-radius: 0 !important;
+}
+nav{
+  height: 100% !important;
+  width: 100px !important;
+  position: fixed !important;
+  top: 0px !important;
+  overflow: visible !important;  
+  z-index: 3;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 .header{
-  box-sizing: none !important;
+  height: 100%;
+  width: auto;
+  // justify-content: normal;
+  gap: 40px;
 }
 .logo{
   font-size: 24px;
   color: rgb(87, 157, 255) !important;
 }
-.nav{
-}
 .lang{
-  box-sizing:inherit !important;
-  margin-right: 20px;
+  position: fixed;
+  bottom: 0;
+  box-sizing: inherit !important;  
+  gap: 10px;
+  margin-bottom: 20px;
 }
 .lang-button{
   font-size: 20px;
-  margin-right: 10px;
   color: rgb(87, 157, 255) !important;
   text-decoration: none;
 }
@@ -37,13 +53,13 @@
   color: rgb(87, 157, 255) !important;
 }
 .card{
-  margin-top: 0px;
   border: none !important;
   border-radius: 0 !important;
 }
 .card-body{
   padding: 0px;
   margin: 0px;
+  border-radius: 0 !important;
 }
 .about-hr{
   height: 1.5px;
@@ -56,14 +72,15 @@
   left: 0;
   height: 500px;
   width: auto;
-  margin-bottom: 40px;
 }
 .container{
+  padding-top: 40px;
   margin-bottom: 40px;
   max-width: 800px;
 }
 .supply{
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   height: auto;
 }
 .catalog{
@@ -73,7 +90,7 @@
   left: 0;
   height: 500px;
   width: auto;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   margin-top: 40px;
 }
 .catalog-title{  
@@ -96,6 +113,8 @@ li.catalog-item{
   margin: 8px;
 }
 .contacts{
+  padding-top: 40px;
+  margin-bottom: 40px;
   height: 300px;
   display: flex;
   flex-wrap: nowrap;
