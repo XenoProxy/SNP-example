@@ -53,6 +53,7 @@
   <footer>
     <div class="footer">
       <div class="footer-info-container d-flex flex-column">
+        <img class="logo-footer" src="../../../public/images/Logo.png"></img> 
         <p class="footer-info">A-311 Halla One and One Tower 101 Gasan Digital 2-ro, Geumcheon-gu, Seoul 08505 Korea Hyeyoung Lim</p>
         <p class="footer-info">snptec@snptec.co.kr</p>
         <p class="footer-info">+82 2 2101 2056</p>
