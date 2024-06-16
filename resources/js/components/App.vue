@@ -2,7 +2,7 @@
   <header>
     <nav class="pt-2 bg-dark" style="height: 58px; width: 100%; position: fixed !important; top: 0 !important; overflow: hidden;">
       <div class="header d-flex flex-column align-items-center">  
-        <div class="logo" style="color: azure;">SNP</div>    
+        <img class="logo" src="../../../public/images/Logo.png"></img>    
         <ul class="nav align-items-center justify-content-start" style="align-self: flex-end;">       
           <li>
               <router-link to="/" class="nav-link" @click="scrollToAbout"

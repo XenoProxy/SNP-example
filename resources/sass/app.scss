@@ -27,22 +27,24 @@ nav{
   position: fixed !important;
   top: 0px !important;
   overflow: visible !important;  
-  z-index: 3;
+  z-index: 2;
   padding-right: 0 !important;
   padding-left: 0 !important;
+  // background-image: linear-gradient(180deg, #4f6e9996, #212529);
 }
 .header{
   height: 100%;
   width: auto;
   gap: 40px;
 }
+.logo{
+  height: 35px;
+  width: auto;
+  margin-top: 10px;
+}
 .nav{
   gap: 40px;
   letter-spacing: normal;
-}
-.logo{
-  font-size: 24px;
-  color: rgb(87, 157, 255) !important;
 }
 .lang{
   position: fixed;
@@ -97,7 +99,7 @@ nav{
 }
 .main-tex-container{
   width: 100%;  
-  background-image: linear-gradient(360deg, #4f6e99, #494949 90%);
+  background-color: #494949;
 }
 .main-text{
   font-size: 22px;
