@@ -49,9 +49,16 @@
       </div>
     </div>
   </div>
-  
+
   <footer>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="footer-info-container d-flex flex-column">
+        <p class="footer-info">A-311 Halla One and One Tower 101 Gasan Digital 2-ro, Geumcheon-gu, Seoul 08505 Korea Hyeyoung Lim</p>
+        <p class="footer-info">snptec@snptec.co.kr</p>
+        <p class="footer-info">+82 2 2101 2056</p>
+        <p class="footer-info" id="current-year">Copyright &copy; SNP Tec Corp.</p>
+      </div>
+    </div>
   </footer>
 </template>
   
@@ -64,7 +71,7 @@
 
     },
     mounted() {      
-      // this.scrollToAnchorPoint();
+      document.getElementById('current-year').innerHTML = 'Copyright &copy; ' + new Date().getFullYear() + ' SNP Tec Corp.';
     }, 
     methods: {
       scrollToAbout() {
