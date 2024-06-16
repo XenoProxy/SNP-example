@@ -109,7 +109,7 @@ nav{
   margin-bottom: 0;
 }
 .company-name{
-  color: #82bfff;
+  color: #579dff;
 }
 .text-justify{
   text-align: justify;
@@ -191,7 +191,7 @@ li.catalog-item{
   margin-bottom: 20px;
 }
 .contact-list{
-  width: 900px;
+  max-width: 900px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -226,6 +226,7 @@ li.catalog-item{
 }
 .footer-info-container{  
   align-items: center;
+  margin-left: 100px;
   margin-right: 20px;
 }
 .footer-info{  
