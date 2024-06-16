@@ -1,5 +1,5 @@
 <template>
-  <div class="catalog" style="height: 400px;">
+  <div class="catalog" style="height: 600px;">
     <div class="container" style="height: auto;">
       <p class="catalog-title">Catalog</p>
       <div class="catalog-list-container">
