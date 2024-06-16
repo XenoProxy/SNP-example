@@ -1,7 +1,7 @@
 <template>
   <div class="supply">
     <div class="container supply-container" style="height: auto;">
-      <div class="supply-part text-justify">
+      <div class="supply-part text-justify supply-text">
         <p style="font-size: 18px;">
           SNP Tec Corp. engages in the supply of electronic components for the needs of manufacturers of electronic equipment and equipment of a wide range of profiles.
           Our customers receive benefits when ordering parts from us:

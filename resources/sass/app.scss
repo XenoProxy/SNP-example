@@ -75,6 +75,9 @@ nav{
   margin: 0px;
   border-radius: 0 !important;
 }
+.about{  
+  margin-left: 100px;
+}
 .about-hr{
   height: 1.5px;
   color:#00409b;;
@@ -85,7 +88,6 @@ nav{
   top: 0;
   left: 0;
   height: 500px;
-  margin-left: 100px;
   width: auto;
 }
 .container{
@@ -114,15 +116,19 @@ nav{
   padding-top: 40px;
   padding-bottom: 40px;
   height: auto;
+  margin-left: 100px;
 }
 .supply-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .supply-part{
   width: 450px;
   height: 100%;
+}
+.supply-text{
+  margin-right: 80px;
 }
 .supply-list{
   gap:20px;
@@ -140,6 +146,7 @@ nav{
   font-size: 20px;
 }
 .catalog{
+  margin-left: 100px;
   background-image: url("../../public/images/geometry.jpg");
   background-size: cover;
   top: 0;
@@ -168,6 +175,7 @@ li.catalog-item{
   margin: 8px;
 }
 .contacts{
+  margin-left: 100px;
   margin-bottom: 80px;
   height: 300px;
   display: flex;
