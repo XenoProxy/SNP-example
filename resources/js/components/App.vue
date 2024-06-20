@@ -6,28 +6,28 @@
         <ul class="nav align-items-center justify-content-start" style="align-self: flex-end;">       
           <li>
               <router-link to="/" class="nav-link" @click="scrollToAbout"
-                style="text-decoration: none;"> About
+                style="text-decoration: none;"> {{ $t('nav_about') }}
               </router-link>
           </li>
           <li>
             <router-link to="/" class="nav-link" @click="scrollToSupply"
-              style="text-decoration: none;">Supply 
+              style="text-decoration: none;"> {{ $t('nav_supply') }} 
             </router-link>
           </li>     
           <li>
               <router-link to="/" class="nav-link" @click="scrollToCatalog"
-                style="text-decoration: none;"> Catalog
+                style="text-decoration: none;"> {{ $t('nav_catalog') }}
               </router-link>
           </li>
           <li>
               <router-link to="/" class="nav-link" @click="scrollToContacts"
-                style="text-decoration: none;"> Contact Us
+                style="text-decoration: none;"> {{ $t('nav_contact_us') }}
               </router-link>
           </li>
         </ul>
         <div class="lang d-flex flex-row">
-          <a class="lang-button">EN</a>
-          <a class="lang-button">KO</a>
+          <a class="lang-button" @click="switchLanguage">EN</a>
+          <a class="lang-button" @click="switchLanguage">KO</a>
         </div>
       </div> 
     </nav>
@@ -54,10 +54,10 @@
     <div class="footer">
       <div class="footer-info-container d-flex flex-column">
         <img class="logo-footer" src="../../../public/images/Logo.png"></img> 
-        <p class="footer-info">A-311 Halla One and One Tower 101 Gasan Digital 2-ro, Geumcheon-gu, Seoul 08505 Korea Hyeyoung Lim</p>
+        <p class="footer-info">{{ $t('address') }}</p>
         <p class="footer-info">snptec@snptec.co.kr</p>
-        <p class="footer-info">+82 2 2101 2056</p>
-        <p class="footer-info" id="current-year">Copyright &copy; SNP Tec Corp.</p>
+        <p class="footer-info">{{ $t('tel') }}</p>
+        <p class="footer-info" id="current-year">Copyright &copy; SNP Tec Corp., Ltd</p>
       </div>
     </div>
   </footer>
@@ -65,11 +65,14 @@
   
 <script>
   import { ref, onMounted  } from 'vue';
-
+  import { useI18n } from '@yangss/vue3-i18n';
   export default {
     name: 'App',
     setup() {
-
+      const { locale, t } = useI18n();
+      return {
+        switchLanguage: () => { locale.value = locale.value === 'koKR' ? 'enUS' : 'koKR' },
+    }
     },
     mounted() {      
       document.getElementById('current-year').innerHTML = 'Copyright &copy; ' + new Date().getFullYear() + ' SNP Tec Corp.';
